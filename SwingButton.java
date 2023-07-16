@@ -22,4 +22,7 @@ public class SwingButton extends JFrame implements ActionListener {
             System.out.println("Hello");
         }
     }
+    public static void main(String[] args) {
+        new SwingButton();
+    }
 }
