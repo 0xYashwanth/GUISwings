@@ -23,6 +23,11 @@ public class SwingButton extends JFrame implements ActionListener {
         }
     }
     public static void main(String[] args) {
-        new SwingButton();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run()
+            {
+                new SwingButton();
+            }
+        });
     }
 }
