@@ -28,17 +28,18 @@ public class JTreeDemo {
         DefaultMutableTreeNode b3=new DefaultMutableTreeNode("B3");
         b.add(b3);
         JTree tree=new JTree(top);
-        JScrollPane jsp=new JScrollPane(tree);
-        jfrm.add(jsp);
-        JLabel jlab=new JLabel();
-        jfrm.add(jlab, BorderLayout.SOUTH);
+        jfrm.add(tree);
+        // JScrollPane jsp=new JScrollPane(tree);
+        // jfrm.add(jsp);
+        // JLabel jlab=new JLabel();
+        //jfrm.add(jlab, BorderLayout.SOUTH);
 
-        tree.addTreeSelectionListener(new TreeSelectionListener() {
-            public void valueChanged(TreeSelectionEvent tse)
-            {
-                jlab.setText("Selection is "+tse.getPath());
-            }
-        });
+        // tree.addTreeSelectionListener(new TreeSelectionListener() {
+        //     public void valueChanged(TreeSelectionEvent tse)
+        //     {
+        //         jlab.setText("Selection is "+tse.getPath());
+        //     }
+        // });
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable(){
