@@ -1,7 +1,7 @@
 import java.sql.*;    
 public class CreateStatement {
-    public static void main(String[] args) {
-        try {
+    public static void main(String[] args) throws Exception{
+        
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "admin");
@@ -15,9 +15,6 @@ public class CreateStatement {
             con.close();
 
 
-        } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println("Exception raised due to:"+e);
-        }
+        
     }
 }
