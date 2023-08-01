@@ -21,7 +21,7 @@ public class AdapterDemo extends Frame {
     public static void main(String args[]) {
         AdapterDemo ad = new AdapterDemo();
         ad.setSize(200, 150);
-        ad.setTitle("AdapterDemo");
+        ad.setTitle("hero");
         ad.setVisible(true);
     }
 }

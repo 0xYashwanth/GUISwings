@@ -7,7 +7,7 @@ public class FrameDemo extends Frame{
         setSize(700, 700);
         setVisible(true);
         setBackground(Color.CYAN);
-        setForeground(Color.BLACK);
+        setForeground(Color.BLUE);
         addWindowListener(new WindowAdapter()
         {
             public void WindowClosing(WindowAdapter we)

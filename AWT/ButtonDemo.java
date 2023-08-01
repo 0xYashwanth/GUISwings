@@ -7,9 +7,9 @@ public class ButtonDemo extends Applet implements ActionListener{
     Button yes,no,maybe;
     public void init()
     {
-        yes = new Button("Yes");
-        no = new Button("No");
-        maybe = new Button("Maybe");
+        yes = new Button("yes");
+        no = new Button("no");
+        maybe = new Button("maybe");
 
         add(yes);
         add(no);
@@ -34,6 +34,7 @@ public class ButtonDemo extends Applet implements ActionListener{
             msg="You pressed Maybe";
 
         repaint();
+
     }
     public void paint(Graphics g)
     {
