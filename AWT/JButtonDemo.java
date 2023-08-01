@@ -14,7 +14,7 @@ public class JButtonDemo implements ActionListener {
 
         jfrm.setSize(500, 450);
 
-        ImageIcon i1 = new ImageIcon("C:\\Users\\yashw\\Downloads\\hourglass.jpg");
+        ImageIcon i1 = new ImageIcon("hourglass.png");
         JButton jb = new JButton(i1);
         jb.setActionCommand("Hourglass");
 
@@ -22,7 +22,7 @@ public class JButtonDemo implements ActionListener {
 
         jfrm.add(jb);
 
-        ImageIcon i2 = new ImageIcon(":\\Users\\yashw\\Downloads\\hourglass.jpg");
+        ImageIcon i2 = new ImageIcon("hourglass.png");
         jb = new JButton(i2);
         jb.setActionCommand("Analog Clock");
 
@@ -30,14 +30,14 @@ public class JButtonDemo implements ActionListener {
 
         jfrm.add(jb);
 
-        ImageIcon i3 = new ImageIcon("C:\\Users\\yashw\\Downloads\\hourglass.jpg");
+        ImageIcon i3 = new ImageIcon("hourglass.png");
         jb = new JButton(i3);
         jb.setActionCommand("Digital Clock");
         jb.addActionListener(this);
 
         jfrm.add(jb);
 
-        ImageIcon i4 = new ImageIcon("C:\\Users\\yashw\\Downloads\\hourglass.jpg");
+        ImageIcon i4 = new ImageIcon("hourglass.png");
         jb = new JButton(i4);
         jb.setActionCommand("stop watch");
         jb.addActionListener(this);
