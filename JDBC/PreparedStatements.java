@@ -4,7 +4,7 @@ class PreparedStatements {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","admin");
-            PreparedStatement stmt=con.prepareStatement("select * from emp values(?,?)");
+            PreparedStatement stmt=con.prepareStatement("insert into emp values(?,?)");
             stmt.setInt(1, 102);
             stmt.setString(1, "Hello");
 
